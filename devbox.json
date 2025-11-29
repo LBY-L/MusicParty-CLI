@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "uv@0.9.9",
+    "mpv@0.40.0",
+    "mpvScripts.mpris@1.1",
+    "github:nix-community/nixGL#nixGLIntel",
+    "vlc@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "if ! test -d .venv; echo 'Creating Python venv...'; uv venv && uv sync; end",
+      "echo 'Initizalizing MusciParty venv...'",
+      "set MPV_DIR $(pwd)/.devbox/nix/profile/default/share/mpv/",
+      "alias mpv='mpv --config-dir=$MPV_DIR'",
+      "set VENV_DIR $(pwd)/.venv",
+      ". $VENV_DIR/bin/activate.fish && echo 'Welcome to the Musicparty project!'"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

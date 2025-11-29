@@ -1,0 +1,165 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-11-27T07:58:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d59e0290eefe0f12512043842d7096c4070f30e?lastModified=1764230294"
+    },
+    "github:nix-community/nixGL#nixGLIntel": {
+      "last_modified": "2025-11-02T13:41:20Z",
+      "resolved": "github:nix-community/nixGL/b6105297e6f0cd041670c3e8628394d4ee247ed5?lastModified=1762090880#nixGLIntel"
+    },
+    "mpv@0.40.0": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#mpv",
+      "source": "devbox-search",
+      "version": "0.40.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2754qznbm7dwqzg2ga2g9mjykinjfd9p-mpv-with-scripts-0.40.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2754qznbm7dwqzg2ga2g9mjykinjfd9p-mpv-with-scripts-0.40.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5sv3digcm85vkiiari2mi50gg6b52qc8-mpv-with-scripts-0.40.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5sv3digcm85vkiiari2mi50gg6b52qc8-mpv-with-scripts-0.40.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4ldmi2aw7j7aqpxbhv7ass396gvgjab5-mpv-with-scripts-0.40.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4ldmi2aw7j7aqpxbhv7ass396gvgjab5-mpv-with-scripts-0.40.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/aj331wpcz7m0d680ximkg9flcm7ksz2c-mpv-with-scripts-0.40.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/aj331wpcz7m0d680ximkg9flcm7ksz2c-mpv-with-scripts-0.40.0"
+        }
+      }
+    },
+    "mpvScripts.mpris@1.1": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#mpvScripts.mpris",
+      "source": "devbox-search",
+      "version": "1.1",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5gcmyjyhaj1gpqkkzjws9wr0pkk751f3-mpv-mpris-1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5gcmyjyhaj1gpqkkzjws9wr0pkk751f3-mpv-mpris-1.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kpfb739gcspq7b1sxfzwbwc29kyzivxn-mpv-mpris-1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kpfb739gcspq7b1sxfzwbwc29kyzivxn-mpv-mpris-1.1"
+        }
+      }
+    },
+    "uv@0.9.9": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#uv",
+      "source": "devbox-search",
+      "version": "0.9.9",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nq7ylsdliifrbr5qvi741n5bi8scm1gb-uv-0.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nq7ylsdliifrbr5qvi741n5bi8scm1gb-uv-0.9.9"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3pviz6gpdk0llvy59qjxg8hr95yn76nz-uv-0.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3pviz6gpdk0llvy59qjxg8hr95yn76nz-uv-0.9.9"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xmmdhdlc44wsij6nx4j6b50khx6slnfw-uv-0.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xmmdhdlc44wsij6nx4j6b50khx6slnfw-uv-0.9.9"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0mn8ygv4y08ija7q02cik2vl5bpjdx8a-uv-0.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0mn8ygv4y08ija7q02cik2vl5bpjdx8a-uv-0.9.9"
+        }
+      }
+    },
+    "vlc@latest": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#vlc",
+      "source": "devbox-search",
+      "version": "3.0.21",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f31kr1i0qjqi2aryrc9xq0zraaaz7a62-vlc-3.0.21",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/f31kr1i0qjqi2aryrc9xq0zraaaz7a62-vlc-3.0.21"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/a0g9nlp8kp0ri38pjmg35dn36rvy4h35-vlc-3.0.21",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/a0g9nlp8kp0ri38pjmg35dn36rvy4h35-vlc-3.0.21"
+        }
+      }
+    }
+  }
+}
