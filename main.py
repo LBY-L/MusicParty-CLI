@@ -79,7 +79,15 @@ class Converter:
         print("\n".join(out), flush=True)
 
 
-@click.command()
+@click.group(invoke_without_command=True)
+@click.pass_context
+def shutup(ctx):
+    if ctx.invoked_subcommand is None:
+        click.echo(ctx.get_help())
+        ctx.exit()
+
+
+@click.command(help="MusicParty a very barebones music indexer for Copyparty")
 @click.argument("urls", nargs=-1)
 @click.option("--user")
 @click.option("--password")
@@ -87,7 +95,18 @@ class Converter:
     "--m3u",
     default=True,
 )
-def cli(urls, user, password, m3u):
+@click.pass_context
+def cli(
+    ctx,
+    urls,
+    user,
+    password,
+    m3u,
+):
+    if len(urls) == 0 and not user and not password and m3u is True:
+        click.echo(ctx.get_help())
+        ctx.exit()
+
     if user or password:
         print(
             "Writting this as a playlist file can be insecure when using credentials!",
