@@ -1,7 +1,7 @@
 [project]
-name = "copypartymusic"
+name = "MusicParty"
 version = "0.1.0"
-description = "Add your description here"
+description = "Very barebones and basic music indexer for Copyparty"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -9,7 +9,14 @@ dependencies = [
     "httpx>=0.28.1",
 ]
 
+[project.scripts]
+musicparty = "musicparty.cli:cli"
+
 [dependency-groups]
 dev = [
     "ptpython>=3.0.32",
 ]
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
