@@ -3,7 +3,7 @@ name = "MusicParty"
 version = "0.1.0"
 description = "Very barebones and basic music indexer for Copyparty"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "click>=8.3.1",
     "httpx>=0.28.1",
